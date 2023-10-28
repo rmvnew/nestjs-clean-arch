@@ -53,6 +53,11 @@ describe("UserEntity unit testes", () => {
     expect(typeof sut.props.name).toBe('string')
   })
 
+  it('Setter of name field', () => {
+    sut['name'] = 'other name w'
+    expect(sut.props.name).not.toEqual('other name')
+    expect(typeof sut.props.name).toBe('string')
+  })
 
 
   it('Getter of createdAt field', () => {

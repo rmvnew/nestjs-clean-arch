@@ -3,7 +3,8 @@ import { FieldsErrors, ValidatorFieldsInterface } from "./validator-field.interf
 
 
 
-export abstract class ClassValidatorField<PropsValidated> implements ValidatorFieldsInterface<PropsValidated>{
+export abstract class ClassValidatorField<PropsValidated>
+  implements ValidatorFieldsInterface<PropsValidated>{
 
   erros: FieldsErrors = null
   validatedData: PropsValidated = null
