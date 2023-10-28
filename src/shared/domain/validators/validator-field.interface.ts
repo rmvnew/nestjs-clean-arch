@@ -11,3 +11,4 @@ export interface ValidatorFieldsInterface<PropsValidated> {
   validate(data: any): boolean
 
 }
+
