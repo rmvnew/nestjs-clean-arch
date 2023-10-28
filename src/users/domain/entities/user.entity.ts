@@ -18,8 +18,20 @@ export class UserEntity extends Entity<UserProps> {
   }
 
 
+  update(value: string): void {
+    this.name = value
+  }
+
+  updatePassword(value: string): void {
+    this.password = value
+  }
+
   get name() {
     return this.props.name
+  }
+
+  private set name(value: string) {
+    this.props.name = value
   }
 
   get email() {
@@ -30,8 +42,14 @@ export class UserEntity extends Entity<UserProps> {
     return this.props.password
   }
 
+  private set password(value: string) {
+    this.props.password = value
+  }
+
   get createAt() {
     return this.props.createdAt
   }
+
+
 
 }
